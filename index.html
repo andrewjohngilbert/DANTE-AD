@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-81D6829LG0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-81D6829LG0');
+</script>
+
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset.">
+  <meta property="og:title" content="DEAR: Depth-Estimated Action Recognition"/>
+  <meta property="og:description" content="This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset."/>
+  <meta property="og:url" content="https://andrewjohngilbert.github.io/dear/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="assets/dear_Teaser.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="DEAR: Depth-Estimated Action Recognition">
+  <meta name="twitter:description" content="This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="asserts/dear_Teaser.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Machine Learning, Depth, Video Understanding,andrew Gilbert, Sadegh Rahmani,">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>DEAR: Depth-Estimated Action Recognition</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">DEAR: Depth-Estimated Action Recognition</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/sadegh-rahmani" target="_blank">Sadegh Rahmani</a>[1]<sup></sup>,</span>
+                <span class="author-block">
+                  <a href="F" target="_blank">Filip Rybansky</a>[2]<sup></sup>,</span>
+                  <span class="author-block">
+                    <a href="https://www.ncl.ac.uk/medical-sciences/people/profile/quocvuong.html" target="_blank">Quoc Vuong</a>[2]<sup></sup>,</span>
+                <span class="author-block">
+                  <a href="https://www.surrey.ac.uk/people/frank-guerin" target="_blank">Frank Guerin</a>[1]<sup></sup>,</span>
+                  <span class="author-block">
+                    <a href="https://andrewjohngilbert.github.io/" target="_blank">Andrew Gilbert</a>[1]<sup></sup>,</span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">[1] Unviersity of Surrey [2] Unviersityof Newcastle<br> <a href="https://eccv2024.ecva.net/" target="_blank">The European Conference of Computer Vision 2024</a> <a href="https://sites.google.com/view/hcvworkshop2024" target="_blank">Human-inspired Computer Vision Workshop</a>              
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://andrewjohngilbert.github.io/dear/assets/dear_paper.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                   <span class="link-block">
+                      <a href="assets/DEAR HCV Poster.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Poster</span>
+                    </a>
+                  </span>
+ 
+                  <!-- Github link -->
+                <span class="link-block">
+                    <a href="https://github.com/SadeghRahmaniB/DEAR" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="assets/dear_teaser.jpg">
+      <h2 class="subtitle has-text-centered">
+        We perform supervised action recognition using a fusion of RGB and depth map frames. We used S4V network for processing RGB and the same network plus VideoMamba to extract depth features. Gated cross-attention (GCA) has been used for fusing modalities, while mean operation has been selected for fusing models' scores.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Detecting actions in videos, particularly within cluttered scenes, poses significant challenges due to the limitations of 2D frame analysis from a camera perspective. Unlike human vision, which benefits from 3D understanding, recognizing actions in such environments can be difficult. This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+<!-- Paper poster -->
+
+  <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="assets/DEAR HCV Poster.pdf" width="100%" height="1000">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{Rahmani:Dear:ECCVWS:2024,
+        AUTHOR = Rahmani, Sadegh and Rybansky, Filip and Vuong, Quoc and Guerin, Frank and Gilbert, Andrew ",
+        TITLE = "DEAR: Depth-Estimated Action Recognition",
+        BOOKTITLE = " The European Conference of Computer Vision 2024, Human-inspired Computer Vision Workshop",
+        YEAR = "2024",
+        }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
