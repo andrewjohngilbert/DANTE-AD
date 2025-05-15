@@ -11,12 +11,45 @@
   gtag('config', 'G-81D6829LG0');
 </script>
 
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": "DANTE-AD: Dual-Vision Attention Network for Long-Term Audio Description",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Adrienne Deganutti",
+        "url": "https://www.linkedin.com/in/adrienne-deganutti-bb28031b6/"
+      },
+      {
+        "@type": "Person",
+        "name": "Simon Hadfield",
+        "url": "https://www.surrey.ac.uk/people/simon-hadfield"
+      },
+      {
+        "@type": "Person",
+        "name": "Andrew Gilbert",
+        "url": "https://andrewjohngilbert.github.io/"
+      }
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "University of Surrey"
+    },
+    "datePublished": "2025-05-15",
+    "url": "https://andrewjohngilbert.github.io/DANTE-AD/",
+    "description": "DANTE-AD is a dual-vision Transformer model for long-term audio description, presented at CVPR 2025."
+  }
+  </script>
+
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="We introduce DANTE-AD, an enhanced video description model leveraging a dual-vision Transformer-based architecture to address this gap. DANTE-AD sequentially fuses both frame and scene level embeddings to improve long-term contextual understanding. We propose a novel, state-of-the-art method for sequential cross-attention to achieve contextual grounding for fine-grained audio description generation. Evaluated on a broad range of key scenes from well-known movie clips, DANTE-AD outperforms existing methods across traditional NLP metrics and LLM-based evaluations. ">
+  <meta name="description" content="Discover DANTE-AD, a state-of-the-art dual-vision Transformer model for long-term audio description. Learn more about our CVPR 2025 paper and results.">
   <meta property="og:title" content="DANTE-AD: Dual-Vision Attention Network for Long-Term Audio Description"/>
-  <meta property="og:description" content="We introduce DANTE-AD, an enhanced video description model leveraging a dual-vision Transformer-based architecture to address this gap. DANTE-AD sequentially fuses both frame and scene level embeddings to improve long-term contextual understanding. We propose a novel, state-of-the-art method for sequential cross-attention to achieve contextual grounding for fine-grained audio description generation. Evaluated on a broad range of key scenes from well-known movie clips, DANTE-AD outperforms existing methods across traditional NLP metrics and LLM-based evaluations. "/>
+  <meta property="og:description" content="Discover DANTE-AD, a state-of-the-art dual-vision Transformer model for long-term audio description. Learn more about our CVPR 2025 paper and results."/>
   <meta property="og:url" content="https://andrewjohngilbert.github.io/DANTE-AD/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="assets/DANTE-ADTeaser.jpg" />
@@ -25,7 +58,7 @@
 
 
   <meta name="twitter:title" content="DANTE-AD: Dual-Vision Attention Network for Long-Term Audio Description">
-  <meta name="twitter:description" content="We introduce DANTE-AD, an enhanced video description model leveraging a dual-vision Transformer-based architecture to address this gap. DANTE-AD sequentially fuses both frame and scene level embeddings to improve long-term contextual understanding. We propose a novel, state-of-the-art method for sequential cross-attention to achieve contextual grounding for fine-grained audio description generation. Evaluated on a broad range of key scenes from well-known movie clips, DANTE-AD outperforms existing methods across traditional NLP metrics and LLM-based evaluations. ">
+  <meta name="twitter:description" content="Discover DANTE-AD, a state-of-the-art dual-vision Transformer model for long-term audio description. Learn more about our CVPR 2025 paper and results.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="asserts/DANTE-ADTeaser.">
   <meta name="twitter:card" content="summary_large_image">
@@ -36,6 +69,7 @@
 
 
   <title>DANTE-AD: Dual-Vision Attention Network for Long-Term Audio Description</title>
+ 
   <link rel="icon" type="image/x-icon" href="static/images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -132,7 +166,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="assets/DANTE-ADWideTeaser.jpg">
+      <img src="assets/DANTE-ADWideTeaser.jpg" alt="DANTE-AD method overview for audio description">
       <h2 class="subtitle has-text-centered">
         Our DANTE-AD method extracts frame- and scene-level visual information fused via a sequential cross-attention module for both frame and scene context-aware AD over extended video sequences.
       </h2>
@@ -146,7 +180,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Abstract: Advancing Audio Description with DANTE-AD</h2>
         <div class="content has-text-justified">
           <p>
             Audio Description is a narrated commentary designed to aid vision-impaired audiences in perceiving key visual elements in a video. While short-form video understanding has advanced rapidly, a solution for maintaining coherent long-term visual storytelling remains unresolved. Existing methods rely solely on frame-level embeddings, effectively describing object-based content but lacking contextual information across scenes. We introduce DANTE-AD, an enhanced video description model leveraging a dual-vision Transformer-based architecture to address this gap. DANTE-AD sequentially fuses both frame and scene level embeddings to improve long-term contextual understanding. We propose a novel, state-of-the-art method for sequential cross-attention to achieve contextual grounding for fine-grained audio description generation. Evaluated on a broad range of key scenes from well-known movie clips, DANTE-AD outperforms existing methods across traditional NLP metrics and LLM-based evaluations. 
